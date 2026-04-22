@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,11 +14,71 @@
 
     <title>htmlcss-bootstrap-layout</title>
 </head>
-<body>
 
-    <!-- Link al file JavaScript per i componenti interattivi di Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
-                integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-                
+<body>
+    <!-- Contenitore per Bootstrap -->
+    <div class="container">
+        <header class="text-center py-5">
+            <h1>bootstrap 5 responsive grid</h1>
+            <p>Layout a griglia con diversi breakpoint (sm, md, lg).</p>
+        </header>
+        
+        <main class="text-white">
+            <!-- Prima riga -->
+            <div class="row mb-3">
+                <div class="col-12 col-md-6 col-lg-4 text-body bg-light p-3">
+                    <!-- uso text-body per far tornare il colore del testo al predefinito -->
+                    <h2>Colonna 1</h2>
+                    <p>Larghezza intera su dispositivi piccoli, metà larghezza su dispositivi medi e un terzo su dispositivi grandi.</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-8 bg-secondary p-3">
+                    <h2>Colonna 2</h2>
+                    <p>Larghezza intera su dispositivi piccoli, metà larghezza su dispositivi medi e due terzi su dispositivi grandi.</p>
+                </div>
+            </div>
+
+            <!-- Seconda riga -->
+            <div class="row mb-3">
+                <div class="col-6 col-md-4 bg-primary p-3">
+                    <h2>Colonna 1</h2>
+                    <p>Metà larghezza su dispositivi piccoli e un terzo su dispositivi medi e più grandi.</p>
+                </div>
+                <div class="col-6 col-md-4 bg-success p-3">
+                    <h2>Colonna 2</h2>
+                    <p>Metà larghezza su dispositivi piccoli e un terzo su dispositivi medi e più grandi.</p>
+                </div>
+                <div class="col-12 col-md-4 bg-danger p-3">
+                    <h2>Colonna 3</h2>
+                    <p>Larghezza intera su dispositivi piccoli (col-12) e un terzo su dispositivi medi e più grandi.</p>
+                </div>
+            </div>
+
+            <!-- Terza riga -->
+            <div class="row row-cols-2 row-cols-md-4">
+                <div class="col bg-info p-3">
+                    <h2>Colonna 1</h2>
+                    <p>Metà larghezza su dispositivi piccoli e un quarto su dispositivi medi e più grandi.</p>
+                </div>
+                <div class="col bg-warning p-3">
+                    <h2>Colonna 2</h2>
+                    <p>Metà larghezza su dispositivi piccoli e un quarto su dispositivi medi e più grandi.</p>
+                </div>
+                <div class="col bg-dark p-3">
+                    <h2>Colonna 3</h2>
+                    <p>Metà larghezza su dispositivi piccoli e un quarto su dispositivi medi e più grandi.</p>
+                </div>
+                <div class="col text-body bg-light p-3">
+                    <!-- uso text-body per far tornare il colore del testo al predefinito -->
+                    <h2>Colonna 4</h2>
+                    <p>Metà larghezza su dispositivi piccoli e un quarto su dispositivi medi e più grandi.</p>
+                </div>
+            </div>
+
+        </main>
+    <!-- Chiusura div container -->
+    </div>
+        <!-- Link al file JavaScript per i componenti interattivi di Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+                    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,19 @@
+/* RESET GENERALE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-transform: capitalize;
+}
+
+h1 + p {
+    /* Selettore che identifica il primo p che viene SUBITO dopo un h1 */
+    color:grey;
+}
+
+body {
+    padding: 20px;
+}
